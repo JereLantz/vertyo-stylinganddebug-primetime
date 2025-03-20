@@ -14,7 +14,7 @@ function App() {
   };
 
   const removeTransaction = (id) => {
-    setTransactions(transactions.filter(t => t.id =! id));
+    setTransactions(transactions.filter(t => t.id != id));
   };
 
   return (

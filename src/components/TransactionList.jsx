@@ -6,7 +6,7 @@ function TransactionList({ transactions, onRemove }) {
       <h2>Transactions</h2>
       <ul>
         {transactions.map((transaction) => (
-          <li key={transaction.id} onClick={() => onRemove(transaction.id)}>
+          <li key={transaction.id} onClick={() => {onRemove(transaction.id) }}>
             {transaction.text} - {transaction.amount}
           </li>
         ))}
