@@ -26,7 +26,7 @@ function TransactionForm({ onAdd }) {
         <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} />
       </div>
       <button type="submit" onClick={handleSubmit}>Add Transaction</button>
-    </form>
+    </div>
   );
 }
 
