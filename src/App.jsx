@@ -7,10 +7,10 @@ import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
-  const [transactions, setTransactions] = useState([]);
+  const [transactions, setTransactions] = useState([{id:2,text:"fjskl",amount:69}]);
 
   const addTransaction = (transaction) => {
-    setTransactions(transactions.push(transaction));
+    setTransactions((p)=>[transaction,...p]);
   };
 
   const removeTransaction = (id) => {

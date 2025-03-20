@@ -5,9 +5,9 @@ function TransactionList({ transactions, onRemove }) {
     <div className="transaction-list">
       <h2>Transactions</h2>
       <ul>
-        {transactions.map((transaction, index) => (
-          <li onClick={() => onRemove(transaction.id)}>
-            {transaction.text} - ${transaction.amount}
+        {transactions.map((transaction) => (
+          <li key={transaction.id} onClick={() => onRemove(transaction.id)}>
+            {transaction.text} - {transaction.amount}
           </li>
         ))}
       </ul>

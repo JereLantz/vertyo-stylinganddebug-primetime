@@ -8,7 +8,7 @@ function TransactionForm({ onAdd }) {
     const transaction = {
       id: Math.random(),
       text: text,
-      amount: amount
+      amount: +amount
     };
     onAdd(transaction);
     setText("");

@@ -2,7 +2,10 @@ import React from 'react';
 
 function Balance({ transactions }) {
 
-  const balance = transactions.reduce((acc, curr) => acc + curr.amount);
+    let balance = 0
+    if(transactions.length > 0){
+        balance = transactions.reduce((acc, curr) => acc + curr.amount, balance);
+    }
   
   return (
     <div className="balance">
