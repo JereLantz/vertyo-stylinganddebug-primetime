@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App bg-amber-50">
       <img src={logo} alt="Budget Tracker Logo" className="logo" />
       <Header tittle="Budget Tracker" />
       <Balance transactions={transactions} />
